@@ -1,0 +1,54 @@
+package org.simonwells.CellularAutomata;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.InputStream;
+import java.io.IOException;
+import java.util.Properties;
+
+public class CellularAutomataProperties
+{
+	public void test()
+	{
+		try
+		{
+		  this.is = new FileInputStream(fileName);			
+		  this.properties.load(this.is);
+			this.appName = this.properties.getProperty("appName");
+		  System.out.println(this.appName);
+		  this.infiniteLoop = this.properties.getProperty("infiniteLoop");
+		  System.out.println(this.infiniteLoop);
+		  this.maxGenerations = this.properties.getProperty("maxGenerations");
+		  System.out.println(this.maxGenerations);
+		}
+		catch(FileNotFoundException e)
+		{
+			System.out.println("file not found" + e.getMessage());
+			e.printStackTrace();
+		}
+		catch(IOException e)
+		{
+			System.out.println("ioexception" + e.getMessage());
+			e.printStackTrace();
+		}
+		finally
+		{
+			if( this.is != null )
+			{
+				try{ this.is.close(); } 
+				catch(IOException e) 
+				{
+					System.out.println("ioexception" + e.getMessage());
+				}
+			}
+		}
+	}
+	
+	private String fileName = "conf/ca.conf";
+	private InputStream is = null;
+	private Properties properties = new Properties();	
+	
+	private String appName;
+	private String infiniteLoop;
+	private String maxGenerations;
+}

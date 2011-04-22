@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="straylight" name="org.simonwells.CellularAutomata.PatternTest" tests="2" time="0.061" timestamp="2011-01-22T12:59:49">
+  <properties>
+    <property name="java.vendor" value="Sun Microsystems Inc." />
+    <property name="lib.dir" value="/home/simon/tmp/src/cellular.automata/lib" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Server Compiler" />
+    <property name="build.prod.dir" value="/home/simon/tmp/src/cellular.automata/build/prod" />
+    <property name="os.name" value="Linux" />
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-6-sun-1.6.0.20/jre/lib/resources.jar:/usr/lib/jvm/java-6-sun-1.6.0.20/jre/lib/rt.jar:/usr/lib/jvm/java-6-sun-1.6.0.20/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-6-sun-1.6.0.20/jre/lib/jsse.jar:/usr/lib/jvm/java-6-sun-1.6.0.20/jre/lib/jce.jar:/usr/lib/jvm/java-6-sun-1.6.0.20/jre/lib/charsets.jar:/usr/lib/jvm/java-6-sun-1.6.0.20/jre/classes" />
+    <property name="sun.desktop" value="gnome" />
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="ant.home" value="/usr/share/ant" />
+    <property name="java.runtime.version" value="1.6.0_20-b02" />
+    <property name="user.name" value="simon" />
+    <property name="build.dir" value="/home/simon/tmp/src/cellular.automata/build" />
+    <property name="user.language" value="en" />
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-6-sun-1.6.0.20/jre/lib/amd64" />
+    <property name="doc.dir" value="/home/simon/tmp/src/cellular.automata/doc" />
+    <property name="ant.project.name" value="CellularAutomata" />
+    <property name="java.version" value="1.6.0_20" />
+    <property name="user.timezone" value="" />
+    <property name="jarname" value="CellularAutomata.jar" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-6-sun-1.6.0.20/jre/lib/endorsed" />
+    <property name="runclass" value="org.simonwells.CellularAutomata.App" />
+    <property name="sun.cpu.isalist" value="" />
+    <property name="sun.jnu.encoding" value="UTF-8" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="file.separator" value="/" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="java.class.version" value="50.0" />
+    <property name="user.country" value="GB" />
+    <property name="java.home" value="/usr/lib/jvm/java-6-sun-1.6.0.20/jre" />
+    <property name="dist.dir" value="/home/simon/tmp/src/cellular.automata/dist" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="ant.file" value="/home/simon/tmp/src/cellular.automata/build.xml" />
+    <property name="os.version" value="2.6.31-22-generic" />
+    <property name="path.separator" value=":" />
+    <property name="java.vm.version" value="16.3-b01" />
+    <property name="ant.library.dir" value="/usr/share/ant/lib" />
+    <property name="output.dir" value="/home/simon/tmp/src/cellular.automata/output" />
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="output.testing.dir" value="/home/simon/tmp/src/cellular.automata/output/testing" />
+    <property name="user.home" value="/home/simon" />
+    <property name="java.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="test.dir" value="/home/simon/tmp/src/cellular.automata/test" />
+    <property name="java.library.path" value="/usr/lib/jvm/java-6-sun-1.6.0.20/jre/lib/amd64/server:/usr/lib/jvm/java-6-sun-1.6.0.20/jre/lib/amd64:/usr/lib/jvm/java-6-sun-1.6.0.20/jre/../lib/amd64:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib" />
+    <property name="java.vendor.url" value="http://java.sun.com/" />
+    <property name="bin.dir" value="/home/simon/tmp/src/cellular.automata/bin" />
+    <property name="java.vm.vendor" value="Sun Microsystems Inc." />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="ant.file.CellularAutomata" value="/home/simon/tmp/src/cellular.automata/build.xml" />
+    <property name="java.class.path" value="/home/simon/tmp/src/cellular.automata/build/prod:/home/simon/tmp/src/cellular.automata/build/test:/usr/share/ant/lib/junit4.jar:/usr/share/java/ant-launcher-1.7.1.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-junit.jar" />
+    <property name="ant.version" value="Apache Ant version 1.7.1 compiled on July 1 2010" />
+    <property name="project.name" value="Cellular Automata" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="build.doc.dir" value="/home/simon/tmp/src/cellular.automata/build/doc" />
+    <property name="java.vm.specification.version" value="1.0" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="sun.os.patch.level" value="unknown" />
+    <property name="java.io.tmpdir" value="/tmp" />
+    <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi" />
+    <property name="os.arch" value="amd64" />
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-6-sun-1.6.0.20/jre/lib/ext:/usr/java/packages/lib/ext" />
+    <property name="user.dir" value="/home/simon/tmp/src/cellular.automata" />
+    <property name="build.test.dir" value="/home/simon/tmp/src/cellular.automata/build/test" />
+    <property name="line.separator" value="
+" />
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+    <property name="basedir" value="/home/simon/tmp/src/cellular.automata" />
+    <property name="ant.java.version" value="1.6" />
+    <property name="ant.core.lib" value="/usr/share/ant/lib/ant.jar" />
+    <property name="file.encoding" value="UTF-8" />
+    <property name="java.specification.version" value="1.6" />
+    <property name="src.dir" value="/home/simon/tmp/src/cellular.automata/src" />
+    <property name="javadoc.dir" value="/home/simon/tmp/src/cellular.automata/doc/javadoc" />
+  </properties>
+  <testcase classname="org.simonwells.CellularAutomata.PatternTest" name="testSize" time="0.0080" />
+  <testcase classname="org.simonwells.CellularAutomata.PatternTest" name="testContents" time="0.0010" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

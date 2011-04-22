@@ -1,0 +1,58 @@
+package org.simonwells.CellularAutomata;
+
+import java.util.Enumeration;
+
+public class DisplayCellularAutomata
+{
+
+	/** Display the current generation on the console. Console output is only representative and behaviour could be platform specific. If you want to work with the generated CA then you should output to a file or database (but it does produce pretty patterns ).
+  *
+  * @param e An enumeration encapsulating the CA generation to display.
+  */
+	public void displayOnConsole(Enumeration e)
+	{
+		while(e.hasMoreElements())
+		{
+			Cell tmp = (Cell) e.nextElement();
+			if (this.symbolicOutput)
+				System.out.print( tmp.isAlive() ? '\u25A0' : '\u00A0' );
+			else
+				System.out.print( tmp.isAlive() ? "1" : "0" );
+		}	
+		System.out.print("\n");	
+	}
+	
+	/** Print the current generation.  
+	*
+	*Various output methods are available such as (1) console output, (2) file output, (3) database output. 
+	*
+	* @param e (Required) An enumeration of Cells
+	*/
+	public void printGeneration(Enumeration e)
+	{
+		if(this.consoleOutput)
+			displayOnConsole(e);
+	}
+	
+	/** 
+  * Display a header describing the CA {@link Pattern} and initial seed Generation.
+  */
+	public void printHeader()
+	{
+		//System.out.println("\033c");
+		//System.out.println("Pattern: \n"+this.pattern.toString());
+		// Display the seed generation
+		//System.out.println("Seed: ");
+		//this.displayOnConsole(this.generation.elements());
+		//System.out.println(" ");
+	}
+
+	public DisplayCellularAutomata()
+	{ 
+		this.consoleOutput = true;
+		this.symbolicOutput = true;
+	}
+	
+	private boolean symbolicOutput;
+	private boolean consoleOutput;
+}

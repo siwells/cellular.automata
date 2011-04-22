@@ -1,0 +1,36 @@
+package org.simonwells.CellularAutomata;
+
+import org.simonwells.CellularAutomata.CellularAutomata;
+import org.simonwells.CellularAutomata.AppProperties;
+
+/**
+* Driver class & main method for the cellular automata application
+*
+* @author Simon Wells <siwells@gmail.com>
+* @version 1.0
+* @since 1.6
+*/
+public class App
+{
+	public static void main(String[] args)
+	{	
+		App app = new App();
+		app.runApp();
+	}
+	
+	private void runApp()
+	{
+		CellularAutomata ca =	new CellularAutomata();	
+		ca.loop();
+		
+		//System.out.println( this.props.getAppName() );
+		//System.out.println( this.props.getPattern() );
+		//System.out.println( this.props.getSeed() );
+		//System.out.println( this.props.getMaxGenerations() );
+		//System.out.println( this.props.getWidth() );
+		
+		//System.out.println( this.props.isClearScreen() );
+	}
+	
+	private static final AppProperties props = new AppProperties();
+}

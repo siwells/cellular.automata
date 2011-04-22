@@ -1,0 +1,87 @@
+package CellularAutomata;
+
+import java.lang.Character;
+import java.util.Enumeration;
+import java.util.logging.Logger;
+import java.util.Vector;
+
+/**
+* Describes the calculation used to determine the status of the child of a given cluster of Cell objects
+*
+* @author Simon Wells <siwells@gmail.com>
+* @version 1.0
+* @since 1.6
+*/
+public class Pattern
+{
+
+	/**
+	* Zero Argument Constructor.
+	*
+	* Creates a new Vector object with default size 8 (eight).
+	*/
+	public Pattern()
+	{
+		this.binaryPattern = new Vector(8);
+	}
+	
+	/** 
+  * Used to set a Pattern given an input String.
+  *
+  * This method will check that the input String is of the correct length and if it is not then a default pattern of [0,0,0,0,0,0,0,0] will be set instead and a message printed to the log for this class. If the input String is the correct length then each element of the pattern will be updated with the corresponding char from the input string.
+  *
+  * @param pattern (required) encoded as a string of 8 characters
+  */
+	public void setPattern(String pattern)
+	{
+		if(pattern.length() != 8)
+		{
+			this.patternLogger.warning("Supplied pattern must contain 8 (eight) values.");
+			this.patternLogger.warning("Supplied pattern is being replaced with the following: [0,0,0,0,0,0,0,0]");
+			
+		}
+		else
+		{
+			for(int idx = 0; idx < pattern.length(); ++idx)
+				this.binaryPattern.add(pattern.charAt(idx));
+		}
+	}
+	
+	/** 
+  * Return the elements of the pattern in the form of an Enumeration.
+  *
+  * A simple getter method to safely retrieve the pattern stored in this class.
+  *
+  * @return Return an enumeration of the pattern elements.
+  */
+	public Enumeration getPattern()
+	{
+		return this.binaryPattern.elements();
+	}
+	
+	/** 
+  * Gets the integer value of the element of the pattern stored in the specifed position.
+  *
+  * @param Specify which element of the Pattern you want to retrieve.
+  * @return Return the value of the elements at the specified position in the pattern.
+  */
+	public int getValue(int position)
+	{
+		Character tmp = (Character) this.binaryPattern.elementAt(position);
+		int value = Integer.parseInt(tmp.toString());
+		return value;
+	}
+	
+	/** 
+  * Retrieve a string containing all of the elements of the pattern as a comma separated list.
+  *
+  *@return A String containing the elements of the Pattern.
+  */
+	public String toString()
+	{
+		return this.binaryPattern.toString();
+	}
+	
+	private Vector binaryPattern;
+	private static Logger patternLogger = Logger.getLogger(Pattern.class.getName());
+}

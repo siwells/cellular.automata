@@ -1,0 +1,16 @@
+appName					=	1D Cellular Automata
+
+# Cellular Automata Parameters
+infiniteLoop		=	false
+maxGenerations	=	10
+width						=	100
+seed						=	0000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000
+pattern					=	01101010
+wrapAround			=	true
+
+#Output
+symbolicOutput	=	true
+consoleOutput		=	true
+dbOutput				=	false
+fileOutput			= false
+clearScreen			= 1

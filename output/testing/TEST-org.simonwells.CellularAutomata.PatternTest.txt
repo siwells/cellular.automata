@@ -1,0 +1,5 @@
+Testsuite: org.simonwells.CellularAutomata.PatternTest
+Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.061 sec
+
+Testcase: testSize took 0.006 sec
+Testcase: testContents took 0.001 sec
