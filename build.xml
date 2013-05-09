@@ -38,6 +38,7 @@
         <delete dir="${build.prod.dir}"/>
         <delete dir="${build.test.dir}"/>
         <delete dir="${build.doc.dir}"/>
+		<delete dir="${output.testing.dir}" />
 	</target>
 
 	<target name="init" depends="clean">
