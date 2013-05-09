@@ -1,7 +1,0 @@
-package org.simonwells.utilities;
-
-class NotBooleanException extends Exception
-{
-	public NotBooleanException() {}
-	public NotBooleanException(String msg) { super(msg); }
-}
