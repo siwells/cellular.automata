@@ -44,6 +44,7 @@
 		<mkdir dir="${build.prod.dir}" />
 		<mkdir dir="${build.test.dir}" />
 		<mkdir dir="${build.doc.dir}" />
+		<mkdir dir="${output.testing.dir}" />
 	</target>
 
 	<target name="compile" depends="init">
