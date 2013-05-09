@@ -1,4 +1,4 @@
-A simple example of a 2D Cellular Automata
+A simple example of a 1D Cellular Automata
 
 Install
 -------
